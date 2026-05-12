@@ -8,15 +8,15 @@ Hello and welcome, this is my public portfolio repository. I use this to provide
 - C
 - Java
 - JavaScript
-- Python
 - PHP
+- Python
 
 ## Database / Query Languages
 - SQL (MySQL)
 
 ## IDEs
-- Visual Studio 2022
 - Apache NetBeans 29
+- Visual Studio 2022
 
 ## Text Editors
 - Notepad
