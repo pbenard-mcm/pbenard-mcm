@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-Hello and welcome, this is my public portfolio repository. I use this to provide a brief overview of my personal background, education, and some samples of my coding projects done in university.
+Hello and welcome, this is my public portfolio repository. I'll be using this repository to provide a brief overview of my education in coding, the coding languages/IDEs I am familiar with and some samples of my coding projects done in university.
 
 ----
 
