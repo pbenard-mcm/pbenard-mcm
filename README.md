@@ -1,5 +1,26 @@
 ## Hi there 👋
 
+Hello and welcome, this is my public portfolio repository. I use this to provide a brief overview of my personal background, education, and some samples of my coding projects done in university.
+
+----
+
+## Coding Languages
+- C
+- Java
+- JavaScript
+- Python
+- PHP
+
+## Database / Query Languages
+- SQL (MySQL)
+
+## IDEs
+- Visual Studio 2022
+- Apache NetBeans 29
+
+## Text Editors
+- Notepad
+- Sublime Text
 <!--
 **pbenard-mcm/pbenard-mcm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
