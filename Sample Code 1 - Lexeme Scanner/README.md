@@ -1,36 +1,158 @@
-## Hi there 👋
+## SAMPLE CODE - LEXEME SCANNER
 
-Hello and welcome to my code sample of the Language Parser (Note: I need to explain what it does, what it implements/uses and the expected output)
+This is a sample code provided to help demonstrate some of the concepts of coding that I am familiar with. 
 ----
 
-## Coding Languages
-- C
-- Java
-- JavaScript
-- PHP
-- Python
+## Language: C
 
-## Database / Query Languages
-- SQL (MySQL)
+## IDE Used
+- Visual Studio Code 2022 (Community)
 
-## IDEs
-- Apache NetBeans 29
-- Visual Studio 2022
+## Arguments
+- Input: Prog1InputCode.c
+- Output: Prog1Output.txt
 
-## Text Editors
-- Notepad
-- Sublime Text
-<!--
-**pbenard-mcm/pbenard-mcm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Brief Overview
 
-Here are some ideas to get you started:
+The Lexeme Scanner was a coding project done to demonstrate a working knowledge of lexemes and how to identify, label and record how many are contained a piece of incoming code by parsing through itline by line. This program takes an input file in and scans through each character, determining through a series of if-conditions, what category of lexeme it falls under, before tallying it and outputting it to a data file with it's line and row number, as well as the category of lexeme it is classified as.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+## Expected Output
+
+(  1,   1)	PPDIR	#define _CRT_SECURE_NO_WARNINGS
+(  2,   1)	PPDIR	#include <stdio.h>		/* everything after # in col 1 ignored! */
+(  3,   1)	PPDIR	#include <math.h>
+(  4,   1)	PPDIR	#include <string.h>
+(  6,   1)	CMMNT	/* first comment is not multi-line! */
+(  7,   1)	CMMNT	/*
+(  8,   1)	CMMNT	 >	"Sample" source code for COSC-4310, Spring 2025
+(  9,   1)	CMMNT	 >	Programming project #1 -- partial lexical scanner
+( 10,   1)	CMMNT	 >	Author:  Mr. Rich Brozovic
+( 11,   1)	CMMNT	 >
+( 12,   1)	CMMNT	 >	This code compiles without any warnings and executes!
+( 13,   1)	CMMNT	 */
+( 15,   1)	KEYWD	int
+( 15,   5)	IDENT	main
+( 15,  10)	KEYWD	void
+( 17,   5)	KEYWD	int
+( 17,   9)	IDENT	int0Var
+( 17,  18)	IDENT	nbr_out_123
+( 17,  31)	IDENT	year2025
+( 17,  42)	INTGR	0
+( 18,   5)	KEYWD	char
+( 18,  10)	IDENT	L26
+( 18,  16)	CHAR 	'Z'
+( 18,  21)	IDENT	X3_86Z
+( 18,  29)	IDENT	Array_of_25_Char
+( 18,  46)	INTGR	25
+( 18,  51)	IDENT	tabch
+( 19,   5)	KEYWD	double
+( 19,  12)	IDENT	pi
+( 19,  17)	FLOAT	3.1415926535897932384626433832795
+( 19,  53)	KEYWD	float
+( 19,  59)	IDENT	flt_IN
+( 19,  69)	FLOAT	1.0
+( 19,  74)	IDENT	ResultNBR
+( 19,  86)	FLOAT	0.0
+( 19,  97)	CMMNT	/* that was fun!! */
+( 21,   5)	CMMNT	/*  Print title  */
+( 22,   5)	IDENT	printf
+( 22,  12)	STRNG	"Sample Code for COSC-4310 Lex Scanner\n"
+( 22,  57)	IDENT	printf
+( 22,  64)	STRNG	"\t Spring 2025\n"
+( 24,   5)	IDENT	tabch
+( 24,  15)	CHAR 	'\t'
+( 24,  94)	IDENT	tabch
+( 24, 102)	CHAR 	'\''
+( 25,   5)	IDENT	tabch
+( 25,  11)	CHAR 	'	'
+( 25,  17)	IDENT	printf
+( 25,  24)	STRNG	"preceding char literal contains single tab code 0x09, printf starts in col 17\n"
+( 26,   5)	IDENT	tabch
+( 26,  12)	CHAR 	'	'
+( 26,  21)	IDENT	printf
+( 26,  28)	STRNG	"preceding char literal contains single tab code 0x09, printf starts in col 21\n"
+( 27,   5)	IDENT	tabch
+( 27,  13)	CHAR 	'	'
+( 27,  21)	IDENT	printf
+( 27,  28)	STRNG	"preceding char literal contains single tab code 0x09, printf starts in col 21\n"
+( 28,   5)	IDENT	tabch
+( 28,  14)	CHAR 	'	'
+( 28,  21)	IDENT	printf
+( 28,  28)	STRNG	"preceding char literal contains single tab code 0x09, printf starts in col 21\n"
+( 29,   5)	IDENT	tabch
+( 29,  15)	CHAR 	'	'
+( 29,  21)	IDENT	printf
+( 29,  28)	STRNG	"preceding char literal contains single tab code 0x09, printf starts in col 21\n"
+( 30,   5)	IDENT	tabch
+( 30,  16)	CHAR 	'	'
+( 30,  25)	IDENT	printf
+( 30,  32)	STRNG	"preceding char literal contains single tab code 0x09, printf starts in col 25\n"
+( 32,   5)	IDENT	strcpy
+( 32,  12)	IDENT	Array_of_25_Char
+( 32,  29)	STRNG	"COSC-4310, Spring 2025"
+( 32,  61)	CMMNT	/*	rolling now, with tab chars embedded in comment...	*/
+( 32, 125)	IDENT	X3_86Z
+( 32, 134)	IDENT	tabch
+( 34,   5)	CMMNT	/*  Get inputs:  */
+( 35,   5)	IDENT	printf
+( 35,  12)	STRNG	"Enter an integer and a float:  /* not a comment! */ "
+( 36,   5)	IDENT	scanf
+( 36,  11)	STRNG	"%d %f"
+( 36,  21)	IDENT	int0Var
+( 36,  31)	IDENT	flt_IN
+( 36,  45)	IDENT	getchar
+( 37,   5)	CMMNT	/*  two tab chars after first semicolon above */
+( 37,  61)	CMMNT	/* two tab chars between comments */
+( 38,   5)	IDENT	nbr_out_123
+( 38,  20)	KEYWD	int
+( 38,  28)	KEYWD	long
+( 38,  33)	KEYWD	long
+( 38,  38)	IDENT	int0Var
+( 38,  48)	INTGR	1234567890123456789
+( 38,  73)	IDENT	flt_IN
+( 40,   5)	CMMNT	/*  Calculate something
+( 41,   1)	CMMNT			even though it's really meaningless! */
+( 42,   5)	IDENT	ResultNBR
+( 42,  18)	KEYWD	float
+( 42,  25)	FLOAT	76.612
+( 42,  35)	IDENT	flt_IN
+( 42,  44)	IDENT	int0Var
+( 43,  10)	FLOAT	00.303107
+( 43,  22)	IDENT	sqrt
+( 43,  27)	IDENT	year2025
+( 43,  38)	IDENT	int0Var
+( 43,  50)	FLOAT	01.020425
+( 43,  62)	IDENT	pi
+( 43,  67)	FLOAT	043.474677
+( 43,  85)	CMMNT	/* 2 tab chars after semicolon */
+( 45,   5)	CMMNT	/*  Print results, which is still meaningless! *
+( 46,   1)	CMMNT		 *  Also, rest of this comment and following format string contains tab char codes 0x09 instead of \t's -- weird right? /
+( 47,   1)	CMMNT		 *	/	Fooled you again!!
+( 48,   1)	CMMNT		 * / Fooled you again!!
+( 49,   1)	CMMNT	#	should NOT be a PPDIR!!
+( 50,   1)	CMMNT		 */
+( 51,   5)	IDENT	printf
+( 51,  12)	STRNG	"\n	 Results? =		%7.3f\n	 More? =	%c%d\n\n"
+( 51,  65)	IDENT	ResultNBR
+( 52,  13)	IDENT	L26
+( 52,  21)	IDENT	nbr_out_123
+( 53,   5)	IDENT	L26
+( 53,  11)	CHAR 	'\0'
+( 54,   5)	IDENT	printf
+( 54,  12)	STRNG	"\nPress ENTER key to continue	..."
+( 54,  53)	IDENT	getchar
+( 56,   5)	KEYWD	return
+( 56,  12)	INTGR	0
+( 57,   5)	CMMNT	/* End of "Sample" source code for program #1 */
+
+
+    Scanned  59 lines
+              4 PPDIRs
+             53 IDENTs
+             11 KEYWDs
+              4 INTGRs
+              7 FLOATs
+             13 STRNGs
+             10 CHARs
+             12 CMMNTs

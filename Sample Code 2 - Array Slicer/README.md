@@ -1,37 +1,48 @@
-## Hi there 👋
+## SAMPLE CODE - ARRAY SLICER
 
-Hello and welcome, this is my public portfolio repository. I'll be using this repository to provide a brief overview of my education in coding, the coding languages/IDEs I am familiar with and some samples of my coding projects done in university.
-
+This is a sample code provided to help demonstrate some of the concepts of coding that I am familiar with. 
 ----
 
-## Coding Languages
-- C
-- Java
-- JavaScript
-- PHP
-- Python
+## Language: C
 
-## Database / Query Languages
-- SQL (MySQL)
+## IDE Used
+- Visual Studio Code 2022 (Community)
 
-## IDEs
-- Apache NetBeans 29
-- Visual Studio 2022
+## Arguments
+- Input: ArraySlices.dat
+- Output: output.out
 
-## Text Editors
-- Notepad
-- Sublime Text
-<!--
-**pbenard-mcm/pbenard-mcm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Brief Overview
 
-Here are some ideas to get you started:
+This is a small program designed to extract and compute sections of arrays provided by a structured data file, then output the final totals to an output file. It utilizes non-traditional indexing for the arrays and looping procedures, to allow the selection and computation of "slices" taken from an array of values.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Expected Output
+These tallies are the total number of cells used in a slice and what their sum is...
+
+12:3536.98
+6:1698.38
+2:817.70
+24:6704.65
+1:377.71
+===============
+30:36583.55
+27:32724.74
+12:15187.84
+3:3770.13
+140:152095.68
+1:1580.02
+===============
+60:47541.92
+40:32681.74
+1:926.46
+210:164826.98
+56:44406.92
+===============
+30:9569.26
+2:627.34
+120:34876.57
+4:958.20
+12:3698.27
+25:6784.57
+16:4720.53
+===============
